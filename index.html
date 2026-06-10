@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Apostila Completa GM Aracaju 2026 (IDECAN) | ESCUDO</title>
+<meta name="description" content="Apostila completa para a Guarda Municipal de Aracaju 2026 (banca IDECAN). Teoria das 9 disciplinas + banco de questões + simulado, focado no edital. Acesso imediato." />
+<meta property="og:title" content="Apostila Completa GM Aracaju 2026 (IDECAN) | ESCUDO" />
+<meta property="og:description" content="Do zero à aprovação na GCM Aracaju. Teoria + questões + simulado, focado no que cai na prova IDECAN." />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@600;700;800;900&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --navy:#0B1A33; --navy2:#0F2342; --navy3:#16315c;
+    --gold:#C9A24B; --gold2:#E7C873;
+    --cream:#F5F1E6; --ink:#0B1A33;
+    --muted:#9DB0CC; --line:rgba(201,162,75,.22);
+    --ok:#36c08a;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:"Archivo",system-ui,sans-serif; color:var(--cream);
+    background:var(--navy); line-height:1.55; -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  h1,h2,h3,.display{font-family:"Saira Condensed",sans-serif;text-transform:uppercase;line-height:1.02;font-weight:900}
+  a{color:inherit;text-decoration:none}
+  .wrap{width:100%;max-width:1080px;margin:0 auto;padding:0 22px}
+  .g{color:var(--gold2)}
+  .center{text-align:center}
+
+  /* ---- shield mark ---- */
+  .mark{display:inline-flex;align-items:center;gap:12px}
+  .mark .mw{font-family:"Saira Condensed";font-weight:900;letter-spacing:.16em;font-size:24px;color:var(--cream)}
+  .mark .mw b{color:var(--gold)}
+
+  /* ---- top bar ---- */
+  header.bar{position:sticky;top:0;z-index:50;background:rgba(11,26,51,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .bar .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .bar .cta-mini{background:var(--gold);color:var(--navy);font-family:"Saira Condensed";font-weight:800;text-transform:uppercase;letter-spacing:.04em;font-size:15px;padding:10px 18px;border-radius:10px;white-space:nowrap}
+  .bar .tagm{color:var(--muted);font-size:12px;letter-spacing:.16em;text-transform:uppercase}
+
+  /* ---- buttons ---- */
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;
+    background:linear-gradient(180deg,var(--gold2),var(--gold));color:var(--navy);
+    font-family:"Saira Condensed";font-weight:900;text-transform:uppercase;letter-spacing:.03em;
+    font-size:clamp(19px,2.2vw,26px);padding:20px 34px;border-radius:14px;border:none;cursor:pointer;
+    box-shadow:0 14px 34px rgba(201,162,75,.30);transition:transform .15s ease, box-shadow .15s ease;text-align:center}
+  .btn:hover{transform:translateY(-2px);box-shadow:0 18px 42px rgba(201,162,75,.42)}
+  .btn small{display:block;font-family:"Archivo";font-weight:600;text-transform:none;letter-spacing:0;font-size:13px;opacity:.8;margin-top:2px}
+  .btn-pulse{animation:pulse 2.4s ease-in-out infinite}
+  @keyframes pulse{0%,100%{box-shadow:0 14px 34px rgba(201,162,75,.30)}50%{box-shadow:0 14px 44px rgba(201,162,75,.55)}}
+
+  /* ---- hero ---- */
+  .hero{position:relative;padding:56px 0 64px;overflow:hidden;
+    background:
+      radial-gradient(900px 520px at 50% -12%, rgba(201,162,75,.18), transparent 60%),
+      radial-gradient(760px 640px at 92% 116%, rgba(28,58,102,.55), transparent 60%),
+      var(--navy)}
+  .hero .wm{position:absolute;right:-130px;top:40px;opacity:.06;pointer-events:none}
+  .hero .eyebrow{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--line);background:rgba(201,162,75,.08);color:var(--gold2);
+    font-family:"Saira Condensed";font-weight:800;text-transform:uppercase;letter-spacing:.18em;font-size:14px;padding:8px 16px;border-radius:999px}
+  .hero h1{font-size:clamp(38px,7vw,76px);margin:22px 0 16px;letter-spacing:.01em}
+  .hero h1 .g{display:inline-block}
+  .hero .sub{font-size:clamp(17px,2.4vw,22px);color:#E9E3D2;max-width:760px;font-weight:500}
+  .hero .sub b{color:#fff}
+  .hero .ctas{margin:30px 0 18px;display:flex;flex-direction:column;align-items:flex-start;gap:14px}
+  .badges{display:flex;flex-wrap:wrap;gap:10px 18px;margin-top:8px}
+  .badges span{display:inline-flex;align-items:center;gap:8px;color:var(--muted);font-size:14px;font-weight:600}
+  .badges svg{flex:none}
+
+  /* ---- countdown ---- */
+  .count{margin-top:34px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;
+    border:1px solid var(--line);border-radius:16px;background:rgba(15,35,66,.55);padding:16px 20px;width:fit-content}
+  .count .lbl{font-family:"Saira Condensed";text-transform:uppercase;letter-spacing:.14em;font-weight:800;color:var(--gold2);font-size:14px}
+  .count .clock{display:flex;gap:10px}
+  .count .cell{min-width:62px;text-align:center;background:var(--navy);border:1px solid var(--line);border-radius:10px;padding:8px 6px}
+  .count .cell b{font-family:"Saira Condensed";font-weight:900;font-size:30px;display:block;line-height:1}
+  .count .cell s{display:block;text-decoration:none;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.1em;margin-top:4px}
+
+  /* ---- section base ---- */
+  section{padding:64px 0;position:relative}
+  .kicker{font-family:"Saira Condensed";text-transform:uppercase;letter-spacing:.2em;font-weight:800;color:var(--gold);font-size:15px;margin-bottom:10px}
+  h2.title{font-size:clamp(30px,5vw,52px);margin-bottom:14px}
+  .lead{color:var(--muted);font-size:18px;max-width:680px;margin:0 auto}
+  .center .lead{margin:0 auto}
+
+  .alt{background:linear-gradient(180deg,var(--navy),var(--navy2));border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+
+  /* ---- cards grid ---- */
+  .grid{display:grid;gap:18px;margin-top:38px}
+  .g3{grid-template-columns:repeat(3,1fr)}
+  .g2{grid-template-columns:repeat(2,1fr)}
+  .card{background:var(--navy2);border:1px solid var(--line);border-radius:18px;padding:26px}
+  .card .ic{width:54px;height:54px;border-radius:12px;background:rgba(201,162,75,.12);display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+  .card h3{font-size:24px;margin-bottom:8px;color:#fff}
+  .card p{color:#CBD5E8;font-size:15.5px}
+
+  /* ---- value stack list ---- */
+  .stack{max-width:760px;margin:38px auto 0;display:flex;flex-direction:column;gap:14px}
+  .row{display:flex;gap:16px;align-items:flex-start;background:var(--navy2);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+  .row .chk{flex:none;width:30px;height:30px;border-radius:8px;background:rgba(54,192,138,.16);display:flex;align-items:center;justify-content:center;margin-top:2px}
+  .row h4{font-family:"Saira Condensed";text-transform:uppercase;font-size:20px;color:#fff;margin-bottom:3px;letter-spacing:.02em}
+  .row p{color:#B9C6DD;font-size:15px}
+  .row .pv{margin-left:auto;color:var(--gold2);font-family:"Saira Condensed";font-weight:800;white-space:nowrap;font-size:18px}
+
+  /* ---- disciplines table ---- */
+  .disc{max-width:780px;margin:38px auto 0;border:1px solid var(--line);border-radius:16px;overflow:hidden}
+  .disc .hd,.disc .dr{display:grid;grid-template-columns:1fr 92px 92px;gap:8px;padding:14px 20px;align-items:center}
+  .disc .hd{background:var(--navy3);font-family:"Saira Condensed";text-transform:uppercase;letter-spacing:.08em;font-size:14px;color:var(--gold2)}
+  .disc .dr{border-top:1px solid var(--line);font-size:15px}
+  .disc .dr:nth-child(even){background:rgba(15,35,66,.4)}
+  .disc .dr b{font-weight:600;color:#fff}
+  .disc .num{text-align:center;font-family:"Saira Condensed";font-weight:800;color:var(--gold2);font-size:18px}
+  .disc .tot{background:rgba(201,162,75,.1);font-family:"Saira Condensed";font-weight:800}
+  .disc .tot .num{color:#fff}
+
+  /* ---- offer ---- */
+  .offer-wrap{display:flex;justify-content:center}
+  .offer{width:100%;max-width:560px;background:linear-gradient(180deg,var(--navy2),var(--navy));
+    border:1.5px solid var(--gold);border-radius:24px;padding:36px 30px;text-align:center;
+    box-shadow:0 30px 80px rgba(0,0,0,.4)}
+  .offer .stamp{display:inline-block;background:var(--gold);color:var(--navy);font-family:"Saira Condensed";font-weight:900;text-transform:uppercase;letter-spacing:.1em;font-size:14px;padding:7px 16px;border-radius:999px;margin-bottom:18px}
+  .offer .inc{text-align:left;max-width:380px;margin:0 auto 22px;display:flex;flex-direction:column;gap:10px}
+  .offer .inc div{display:flex;gap:10px;align-items:flex-start;color:#E3DECF;font-size:15px}
+  .offer .inc svg{flex:none;margin-top:3px}
+  .offer .from{color:var(--muted);font-size:16px}
+  .offer .from s{color:#7d8eaa}
+  .offer .price{font-family:"Saira Condensed";font-weight:900;line-height:.95;margin:6px 0 2px}
+  .offer .price .cur{font-size:30px;vertical-align:top;color:var(--gold2)}
+  .offer .price .val{font-size:84px;color:#fff}
+  .offer .install{color:#E3DECF;font-size:16px;margin-bottom:22px}
+  .offer .install b{color:#fff}
+  .offer .btn{width:100%}
+  .offer .securow{display:flex;align-items:center;justify-content:center;gap:8px;color:var(--muted);font-size:13px;margin-top:16px}
+  .bump{margin-top:18px;border-top:1px dashed var(--line);padding-top:16px;color:#B9C6DD;font-size:14px}
+  .bump b{color:var(--gold2)}
+
+  /* ---- guarantee ---- */
+  .guar{display:flex;gap:26px;align-items:center;max-width:780px;margin:0 auto;background:var(--navy2);border:1px solid var(--line);border-radius:20px;padding:30px}
+  .guar .seal{flex:none}
+  .guar h3{font-size:28px;color:#fff;margin-bottom:8px}
+  .guar p{color:#C2CEE2;font-size:16px}
+
+  /* ---- faq ---- */
+  .faq{max-width:780px;margin:36px auto 0;display:flex;flex-direction:column;gap:12px}
+  details{background:var(--navy2);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  summary{list-style:none;cursor:pointer;padding:20px 22px;display:flex;justify-content:space-between;align-items:center;gap:14px;
+    font-family:"Saira Condensed";text-transform:uppercase;font-weight:700;font-size:19px;color:#fff;letter-spacing:.02em}
+  summary::-webkit-details-marker{display:none}
+  summary .pm{flex:none;width:26px;height:26px;border-radius:7px;background:rgba(201,162,75,.14);color:var(--gold2);display:flex;align-items:center;justify-content:center;font-size:22px;line-height:1;transition:transform .2s}
+  details[open] summary .pm{transform:rotate(45deg)}
+  details .ans{padding:0 22px 20px;color:#C2CEE2;font-size:15.5px}
+
+  /* ---- final cta ---- */
+  .final{text-align:center;background:
+      radial-gradient(700px 420px at 50% -10%, rgba(201,162,75,.16), transparent 60%),var(--navy2)}
+  .final h2{font-size:clamp(32px,5.5vw,58px);max-width:820px;margin:0 auto 16px}
+
+  /* ---- footer ---- */
+  footer{padding:46px 0;border-top:1px solid var(--line);background:var(--navy);color:var(--muted);font-size:13.5px}
+  footer .wrap{display:flex;flex-direction:column;gap:14px;align-items:center;text-align:center}
+  footer .links{display:flex;gap:18px;flex-wrap:wrap;justify-content:center}
+  footer .disc{font-size:12px;max-width:720px;line-height:1.6;color:#7d8eaa;border:none;margin-top:6px}
+
+  /* ---- sticky mobile cta ---- */
+  .sticky{display:none}
+
+  @media(max-width:860px){
+    .g3{grid-template-columns:1fr}
+    .g2{grid-template-columns:1fr}
+    .guar{flex-direction:column;text-align:center}
+    .row .pv{margin-left:0}
+    .hero .ctas{align-items:stretch}
+    .hero .ctas .btn{width:100%}
+    .count{width:100%}
+    .bar .tagm{display:none}
+    .sticky{display:block;position:fixed;left:0;right:0;bottom:0;z-index:60;background:rgba(11,26,51,.95);backdrop-filter:blur(10px);border-top:1px solid var(--line);padding:10px 14px}
+    .sticky .btn{width:100%;padding:15px;font-size:19px;box-shadow:none;animation:none}
+    body{padding-bottom:78px}
+  }
+</style>
+</head>
+<body>
+
+<!-- shield symbol -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="gg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E7C873"/><stop offset="1" stop-color="#9E7C32"/>
+    </linearGradient>
+    <symbol id="esc" viewBox="0 0 100 122">
+      <path d="M50 4 L92 19 L92 58 C92 90 73 108 50 118 C27 108 8 90 8 58 L8 19 Z" fill="none" stroke="url(#gg)" stroke-width="5"/>
+      <path d="M50 26 l3.2 6.6 7.3 1 -5.3 5.1 1.3 7.2 -6.5 -3.4 -6.5 3.4 1.3 -7.2 -5.3 -5.1 7.3 -1 Z" fill="url(#gg)"/>
+      <path d="M30 64 L44 80 L73 46" fill="none" stroke="url(#gg)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ============ TOP BAR ============ -->
+<header class="bar">
+  <div class="wrap">
+    <a href="#topo" class="mark">
+      <svg width="30" height="37"><use href="#esc" width="30" height="37"/></svg>
+      <span class="mw">ESCU<b>D</b>O</span>
+    </a>
+    <span class="tagm">Preparatório para Carreiras de Segurança</span>
+    <a href="#oferta" class="cta-mini">Quero a apostila</a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="topo" style="padding-top:40px">
+  <svg class="wm" width="560" height="684"><use href="#esc" width="560" height="684"/></svg>
+  <div class="wrap">
+    <span class="eyebrow">● GM Aracaju 2026 · Banca IDECAN</span>
+    <h1>A apostila que te leva do <span class="g">zero à aprovação</span> na Guarda Municipal de Aracaju</h1>
+    <p class="sub">Material <b>completo e focado no edital</b>: teoria das 9 disciplinas, banco de questões comentadas e simulado na distribuição exata da prova. Chega de apostila de 1.000 páginas — aqui é <b>só o que cai</b>, do jeito que a IDECAN cobra.</p>
+
+    <div class="ctas">
+      <a class="btn btn-pulse" href="#oferta">Garantir minha apostila completa <small>Acesso imediato · pagamento seguro pela Hotmart</small></a>
+    </div>
+
+    <div class="badges">
+      <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2l8 4v5c0 5-3.5 8.5-8 11-4.5-2.5-8-6-8-11V6z" stroke="#C9A24B" stroke-width="1.6"/></svg> Conteúdo protegido (DRM)</span>
+      <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4 10-10" stroke="#36c08a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Garantia de 7 dias</span>
+      <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#C9A24B" stroke-width="1.6"/><path d="M12 7v5l3 2" stroke="#C9A24B" stroke-width="1.6" stroke-linecap="round"/></svg> Acesso imediato no e-mail</span>
+      <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 8h16M4 12h16M4 16h10" stroke="#C9A24B" stroke-width="1.6" stroke-linecap="round"/></svg> 100% atualizado p/ 2026</span>
+    </div>
+
+    <div class="count" id="count">
+      <span class="lbl">Prova em<br>13/09/2026</span>
+      <div class="clock">
+        <div class="cell"><b id="cd-d">--</b><s>dias</s></div>
+        <div class="cell"><b id="cd-h">--</b><s>horas</s></div>
+        <div class="cell"><b id="cd-m">--</b><s>min</s></div>
+        <div class="cell"><b id="cd-s">--</b><s>seg</s></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PARA QUEM É ============ -->
+<section class="alt center">
+  <div class="wrap">
+    <div class="kicker">Para quem é</div>
+    <h2 class="title">Esse material é pra você que…</h2>
+    <div class="grid g3" style="text-align:left">
+      <div class="card">
+        <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2v20M5 9l7-5 7 5" stroke="#C9A24B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Está começando do zero</h3>
+        <p>Nunca estudou pra concurso e não sabe por onde começar. Aqui a teoria vem mastigada, na ordem certa pra você não se perder.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#C9A24B" stroke-width="1.7"/><path d="M12 7v5l3 2" stroke="#C9A24B" stroke-width="1.7" stroke-linecap="round"/></svg></div>
+        <h3>Tem pouco tempo</h3>
+        <p>Trabalha o dia todo e precisa render. Material enxuto, focado no edital da IDECAN — sem enrolação e sem páginas inúteis.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4 10-10" stroke="#C9A24B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Quer a vaga de verdade</h3>
+        <p>Cansou de material genérico. Quer teoria + questões comentadas + simulado da banca pra chegar treinado no dia da prova.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ O QUE RECEBE ============ -->
+<section>
+  <div class="wrap center">
+    <div class="kicker">O que você recebe</div>
+    <h2 class="title">Tudo o que cai na GM Aracaju, num só lugar</h2>
+    <p class="lead">Mais de 500 páginas diagramadas, da teoria à revisão — produzido especificamente para o edital IDECAN 2026.</p>
+  </div>
+  <div class="wrap">
+    <div class="stack">
+      <div class="row">
+        <div class="chk"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4 10-10" stroke="#36c08a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div><h4>Teoria das 9 disciplinas</h4><p>Apostilas aprofundadas com teoria, casos práticos, questões-modelo comentadas, tabelas e revisão. Tudo na ordem lógica de estudo.</p></div>
+        <div class="pv">incluso</div>
+      </div>
+      <div class="row">
+        <div class="chk"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4 10-10" stroke="#36c08a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div><h4>Legislação específica destrinchada</h4><p>O diferencial que mais cai: Lei 13.022/2014 (Estatuto das Guardas), CF art. 144, Penal/Processo Penal, Direitos Humanos e a legislação municipal de Aracaju.</p></div>
+        <div class="pv">incluso</div>
+      </div>
+      <div class="row">
+        <div class="chk"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4 10-10" stroke="#36c08a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div><h4>Conhecimentos sobre Aracaju</h4><p>Bloco local completo (7 questões da prova) — história, geografia e dados da cidade que candidato de fora sempre erra.</p></div>
+        <div class="pv">incluso</div>
+      </div>
+      <div class="row">
+        <div class="chk"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4 10-10" stroke="#36c08a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div><h4>Banco de questões comentadas</h4><p>Centenas de questões no estilo IDECAN, com gabarito comentado, base legal e explicação dos distratores. <span class="g">(adicional no checkout)</span></p></div>
+        <div class="pv">order bump</div>
+      </div>
+      <div class="row">
+        <div class="chk"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4 10-10" stroke="#36c08a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div><h4>Simulado completo (80 questões)</h4><p>Na distribuição EXATA do edital (quadro 10.3). Treine o ritmo da prova e descubra onde está perdendo ponto. <span class="g">(adicional no checkout)</span></p></div>
+        <div class="pv">order bump</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DISCIPLINAS ============ -->
+<section class="alt">
+  <div class="wrap center">
+    <div class="kicker">Edital coberto 100%</div>
+    <h2 class="title">As 9 disciplinas — 80 questões / 110 pontos</h2>
+    <p class="lead">A prova exige no mínimo 50% (55 pts) e zerar uma disciplina elimina. Por isso cobrimos tudo, dando peso ao que mais vale.</p>
+  </div>
+  <div class="wrap">
+    <div class="disc">
+      <div class="hd"><span>Disciplina</span><span style="text-align:center">Questões</span><span style="text-align:center">Pontos</span></div>
+      <div class="dr"><b>Língua Portuguesa</b><span class="num">10</span><span class="num">20</span></div>
+      <div class="dr"><b>Raciocínio Lógico-Matemático</b><span class="num">9</span><span class="num">9</span></div>
+      <div class="dr"><b>Informática</b><span class="num">7</span><span class="num">7</span></div>
+      <div class="dr"><b>Atualidades</b><span class="num">7</span><span class="num">7</span></div>
+      <div class="dr"><b>Conhecimentos sobre Aracaju</b><span class="num">7</span><span class="num">7</span></div>
+      <div class="dr"><b>Direito Administrativo</b><span class="num">10</span><span class="num">10</span></div>
+      <div class="dr"><b>Direito Constitucional e Direitos Humanos</b><span class="num">10</span><span class="num">15</span></div>
+      <div class="dr"><b>Direito Penal e Processo Penal</b><span class="num">10</span><span class="num">15</span></div>
+      <div class="dr"><b>Legislação Extravagante</b><span class="num">10</span><span class="num">20</span></div>
+      <div class="dr tot"><b>TOTAL</b><span class="num">80</span><span class="num">110</span></div>
+    </div>
+    <p class="center" style="color:var(--muted);font-size:13px;margin-top:14px">Distribuição conforme o quadro 10.3 do edital GM Aracaju 2026 (IDECAN). Português e Legislação têm peso maior — e é onde o material mais aprofunda.</p>
+  </div>
+</section>
+
+<!-- ============ POR QUE ESCUDO ============ -->
+<section>
+  <div class="wrap center">
+    <div class="kicker">Por que ESCUDO</div>
+    <h2 class="title">Material de quem entende de carreira de segurança</h2>
+  </div>
+  <div class="wrap">
+    <div class="grid g3" style="text-align:left">
+      <div class="card">
+        <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2l8 4v5c0 5-3.5 8.5-8 11-4.5-2.5-8-6-8-11V6z" stroke="#C9A24B" stroke-width="1.6"/><path d="M9 12l2 2 4-4" stroke="#C9A24B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Focado no edital</h3>
+        <p>Nada de copiar apostila genérica. Cada página foi montada a partir do edital da IDECAN para a GM Aracaju 2026.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M4 5h16v14H4z" stroke="#C9A24B" stroke-width="1.6"/><path d="M8 9h8M8 13h5" stroke="#C9A24B" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+        <h3>Teoria que vira questão</h3>
+        <p>Cada tópico fecha com casos práticos e questões-modelo comentadas. Você lê e já treina o raciocínio da banca.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><rect x="4" y="3" width="16" height="18" rx="2" stroke="#C9A24B" stroke-width="1.6"/><path d="M8 8h8M8 12h8M8 16h5" stroke="#C9A24B" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+        <h3>Diagramação profissional</h3>
+        <p>Material limpo, organizado e leve no e-mail. Estude no celular, tablet ou PC — onde e quando der.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OFERTA ============ -->
+<section class="alt" id="oferta">
+  <div class="wrap center">
+    <div class="kicker">A oferta</div>
+    <h2 class="title">Comece hoje a sua preparação</h2>
+  </div>
+  <div class="wrap offer-wrap">
+    <div class="offer">
+      <span class="stamp">Apostila Completa · IDECAN 2026</span>
+      <div class="inc">
+        <div><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4 10-10" stroke="#36c08a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Teoria completa das 9 disciplinas (+500 págs)</div>
+        <div><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4 10-10" stroke="#36c08a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Legislação específica destrinchada</div>
+        <div><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4 10-10" stroke="#36c08a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Bloco de Conhecimentos sobre Aracaju</div>
+        <div><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4 10-10" stroke="#36c08a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Acesso imediato + atualizações 2026</div>
+      </div>
+      <div class="from">de <s>R$ 97</s> por apenas</div>
+      <div class="price"><span class="cur">R$</span><span class="val">47</span></div>
+      <div class="install">à vista no Pix · ou <b>parcele no cartão</b></div>
+      <a class="btn btn-pulse" href="https://pay.hotmart.com/G106236292?checkoutMode=10" target="_blank" rel="noopener">Quero garantir minha apostila <small>Você vai para o checkout seguro da Hotmart</small></a>
+      <div class="securow">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><rect x="4" y="10" width="16" height="10" rx="2" stroke="#9DB0CC" stroke-width="1.6"/><path d="M8 10V7a4 4 0 018 0v3" stroke="#9DB0CC" stroke-width="1.6"/></svg>
+        Pagamento 100% seguro · Pix, cartão e boleto · dados protegidos (LGPD)
+      </div>
+      <div class="bump">💡 <b>No checkout</b>, você pode adicionar o <b>Banco de Questões + Simulado</b> (na distribuição da prova) por um valor especial — é só marcar a caixinha antes de pagar.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GARANTIA ============ -->
+<section>
+  <div class="wrap">
+    <div class="guar">
+      <div class="seal">
+        <svg width="120" height="120" viewBox="0 0 120 120">
+          <circle cx="60" cy="60" r="54" fill="none" stroke="url(#gg)" stroke-width="3"/>
+          <circle cx="60" cy="60" r="44" fill="none" stroke="rgba(201,162,75,.3)" stroke-width="1.5" stroke-dasharray="3 5"/>
+          <text x="60" y="52" text-anchor="middle" font-family="Saira Condensed" font-weight="900" font-size="38" fill="#E7C873">7</text>
+          <text x="60" y="74" text-anchor="middle" font-family="Saira Condensed" font-weight="800" font-size="14" fill="#F5F1E6" letter-spacing="2">DIAS</text>
+        </svg>
+      </div>
+      <div>
+        <h3>Risco zero: garantia incondicional de 7 dias</h3>
+        <p>Comprou, acessou e não gostou? É só pedir o reembolso em até 7 dias direto na Hotmart e você recebe <b style="color:#fff">100% do seu dinheiro de volta</b>, sem perguntas e sem burocracia. O risco é todo nosso.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="alt">
+  <div class="wrap center">
+    <div class="kicker">Dúvidas</div>
+    <h2 class="title">Perguntas frequentes</h2>
+  </div>
+  <div class="wrap">
+    <div class="faq">
+      <details open><summary>Como eu recebo o material? <span class="pm">+</span></summary><div class="ans">É digital (PDF). Assim que o pagamento é aprovado, o acesso chega <b>automaticamente no seu e-mail</b> pela Hotmart. No Pix a liberação costuma ser em minutos. Você estuda no celular, tablet ou computador.</div></details>
+      <details><summary>O material está atualizado para o edital 2026? <span class="pm">+</span></summary><div class="ans">Sim. Todo o conteúdo foi montado a partir do edital da <b>GM Aracaju 2026, banca IDECAN</b>, cobrindo as 9 disciplinas na distribuição oficial (quadro 10.3). Se houver retificação relevante do edital, o material é atualizado.</div></details>
+      <details><summary>Preciso de algum conhecimento prévio? <span class="pm">+</span></summary><div class="ans">Não. O material foi feito para te levar <b>do zero</b>. A teoria começa do básico e vai aprofundando, com casos práticos e questões comentadas para fixar.</div></details>
+      <details><summary>É a apostila inteira ou só uma parte? <span class="pm">+</span></summary><div class="ans">A compra principal já traz a <b>teoria completa das 9 disciplinas</b> (+500 páginas). No checkout você pode adicionar o <b>Banco de Questões + Simulado</b> por um valor especial, se quiser turbinar o treino.</div></details>
+      <details><summary>E se eu não gostar? <span class="pm">+</span></summary><div class="ans">Você tem <b>7 dias de garantia incondicional</b>. Se não for pra você, pede o reembolso pela Hotmart e recebe tudo de volta. Sem risco.</div></details>
+      <details><summary>Quais as formas de pagamento? <span class="pm">+</span></summary><div class="ans"><b>Pix, cartão de crédito (parcelado) e boleto</b>, tudo no ambiente seguro da Hotmart. Seus dados ficam protegidos conforme a LGPD.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="final">
+  <div class="wrap">
+    <svg width="64" height="78" style="margin-bottom:18px"><use href="#esc" width="64" height="78"/></svg>
+    <h2>A prova está chegando. Comece a estudar do jeito certo <span class="g">hoje</span>.</h2>
+    <p class="lead" style="margin-bottom:30px">Material completo, focado no edital e com garantia de 7 dias. Sua aprovação na GM Aracaju começa com a decisão de agora.</p>
+    <a class="btn btn-pulse" href="https://pay.hotmart.com/G106236292?checkoutMode=10" target="_blank" rel="noopener">Garantir minha apostila completa <small>Acesso imediato · garantia de 7 dias</small></a>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <a href="#topo" class="mark"><svg width="26" height="32"><use href="#esc" width="26" height="32"/></svg><span class="mw" style="font-size:20px">ESCU<b>D</b>O</span></a>
+    <div class="links">
+      <a href="https://instagram.com/escudoconcursos" target="_blank" rel="noopener">@escudoconcursos</a>
+      <a href="#oferta">Comprar</a>
+      <a href="#faq">Dúvidas</a>
+    </div>
+    <p>ESCUDO · Preparatório para Carreiras de Segurança</p>
+    <p class="disc">Material de estudo independente, sem vínculo com a Prefeitura de Aracaju, com a IDECAN ou com qualquer órgão oficial. Não garantimos aprovação — o resultado depende da dedicação de cada candidato. Pagamento e entrega processados pela Hotmart. © 2026 ESCUDO. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<!-- sticky mobile cta -->
+<div class="sticky"><a class="btn" href="#oferta">Quero a apostila — R$ 47</a></div>
+
+<script>
+  // contagem regressiva para a prova
+  (function(){
+    var alvo = new Date("2026-09-13T08:00:00-03:00").getTime();
+    function dois(n){return (n<10?"0":"")+n;}
+    function tick(){
+      var d = alvo - Date.now();
+      if(d<0){document.getElementById("count").style.display="none";return;}
+      var dia=Math.floor(d/86400000), h=Math.floor(d%86400000/3600000),
+          m=Math.floor(d%3600000/60000), s=Math.floor(d%60000/1000);
+      document.getElementById("cd-d").textContent=dia;
+      document.getElementById("cd-h").textContent=dois(h);
+      document.getElementById("cd-m").textContent=dois(m);
+      document.getElementById("cd-s").textContent=dois(s);
+    }
+    tick(); setInterval(tick,1000);
+  })();
+</script>
+</body>
+</html>
